@@ -1,10 +1,11 @@
-import { Fragment } from "react";
+// import "./App.css";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <Fragment>
-      <h1>Hello Vite + React!</h1>
-    </Fragment>
+    <>
+      <HomePage />
+    </>
   );
 }
 
