@@ -1,4 +1,4 @@
-function Banner() {
+const Banner = () => {
   return (
     <section className="rts__banner home__one__banner pt-260">
       <div className="rts__banner__background">
@@ -13,7 +13,6 @@ function Banner() {
       <div className="container">
         <div className="row">
           <div className="rts__banner__wrapper d-flex gap-4 justify-content-between">
-            {/* Banner Content */}
             <div className="rts__banner__content">
               <h1 className="rts__banner__title wow animated fadeInUp">
                 Find Your Perfect Dream Job With <span>Jobpath</span>
@@ -26,9 +25,53 @@ function Banner() {
                 Navigating the job market involves exploring various avenues,
                 including online job boards.
               </p>
-              {/* Job Search Form */}
+              {/* <div
+                className="rts__job__search wow animated fadeInUp"
+                data-wow-delay=".2s"
+              >
+                <form
+                  action="#"
+                  className="d-flex align-items-center flex-wrap flex-md-nowrap flex-lg-wrap flex-xl-nowrap gap-4 gap-xl-0 justify-content-between"
+                >
+                  <div className="input-group flex-wrap d-flex gap-4">
+                    <div className="single__input d-flex flex-column">
+                      <label htmlFor="location">Location</label>
+                      <select
+                        name="location"
+                        className="select-nice"
+                        id="location"
+                      >
+                        <option value="1">Select Location</option>
+                        <option value="2">Dhaka</option>
+                        <option value="3">Barisal</option>
+                        <option value="4">Chittagong</option>
+                      </select>
+                    </div>
+                    <div className="vr d-none d-sm-block"></div>
+                    <div className="single__input d-flex flex-column">
+                      <label htmlFor="job__type">Job Type</label>
+                      <select
+                        name="job__type"
+                        className="select-nice"
+                        id="job__type"
+                      >
+                        <option value="1">Select Job Type</option>
+                        <option value="2">Full Time</option>
+                        <option value="3">Part Time</option>
+                        <option value="4">Internship</option>
+                      </select>
+                    </div>
+                  </div>
+                  <button
+                    type="submit"
+                    className="rts__btn gap-2 fill__btn job__search"
+                    aria-label="Search"
+                  >
+                    <i className="fa-light fa-magnifying-glass"></i> Search Job
+                  </button>
+                </form>
+              </div> */}
             </div>
-            {/* Banner Image */}
             <div className="rts__banner__image position-relative">
               <figure className="banner__image">
                 <img
@@ -53,6 +96,6 @@ function Banner() {
       </div>
     </section>
   );
-}
+};
 
 export default Banner;
