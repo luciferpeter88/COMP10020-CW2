@@ -5,7 +5,8 @@ import {
   DeleteSvg,
   MyJobSvg,
 } from "../components/Svgs";
-
+import CanditateProfile from "../components/CanditateProfile";
+import CanditateJobList from "../components/CanditateJobList";
 function CanditateDashboard() {
   return (
     <div className="dashboard__content d-flex">
@@ -30,6 +31,8 @@ function CanditateDashboard() {
           </a>
         </div>
       </div>
+      {/* <CanditateProfile /> */}
+      <CanditateJobList />
     </div>
   );
 }
