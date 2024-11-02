@@ -27,28 +27,22 @@ function Header() {
                         <button to="#">Home</button>
                       </li>
                       <li className="navigation__menu--item">
-                        <button to="#">Home</button>
+                        <button to="#">Jobs</button>
                       </li>
                       <li className="navigation__menu--item ">
-                        <button to="#">Home</button>
+                        <button to="#">Contact</button>
                       </li>
                     </ul>
                   </nav>
                 </div>
                 <div className="header__right__btn d-flex gap-3">
                   <button
-                    className="small__btn d-none d-sm-flex no__fill__btn border-6 font-xs"
+                    className="small__btn d-none d-sm-flex d-xl-flex fill__btn border-6 font-xs"
                     aria-label="Login Button"
                     data-bs-toggle="modal"
                     data-bs-target="#loginModal"
                   >
                     <i className="rt-login"></i>Sign In
-                  </button>
-                  <button
-                    aria-label="Singup Button"
-                    className="small__btn d-none d-sm-flex d-xl-flex fill__btn border-6 font-xs"
-                  >
-                    Sign Up
                   </button>
                   <button
                     className="d-md-block d-lg-none"
