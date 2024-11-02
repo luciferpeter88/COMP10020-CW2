@@ -23,9 +23,9 @@ function SingleJobHeader() {
             </div>
           </div>
           <div className="job__tags d-flex justify-content-center flex-wrap gap-3">
-            <a className="badge bg-secondary">Creative</a>
-            <a className="badge bg-secondary">User Interface</a>
-            <a className="badge bg-secondary">Web UI</a>
+            <a className="badge bg-light">Creative</a>
+            <a className="badge bg-light">User Interface</a>
+            <a className="badge bg-light">Web UI</a>
           </div>
         </div>
       </div>
