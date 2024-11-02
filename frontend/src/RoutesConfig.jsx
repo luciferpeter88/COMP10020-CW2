@@ -6,6 +6,7 @@ import Jobs from "./pages/JobsPage";
 import Contact from "./pages/ContactPage";
 import SingleJobPage from "./pages/SingleJobPage";
 import Dashboard from "./pages/EmployerDashboard";
+import CanditateDashboard from "./pages/CanditateDashboard";
 function RoutesConfig() {
   return (
     <Routes>
@@ -14,6 +15,7 @@ function RoutesConfig() {
       <Route path="/jobs/:id" element={<SingleJobPage />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/employer-dashboard" element={<Dashboard />} />
+      <Route path="/candidate-dashboard" element={<CanditateDashboard />} />
     </Routes>
   );
 }
