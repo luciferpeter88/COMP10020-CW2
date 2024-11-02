@@ -1,12 +1,7 @@
-import HomePage from "./pages/HomePage";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import RoutesConfig from "./RoutesConfig";
 
 function App() {
-  return (
-    <>
-      <HomePage />
-    </>
-  );
+  return <RoutesConfig />;
 }
 
 export default App;
