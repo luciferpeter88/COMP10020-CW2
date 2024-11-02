@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import header from "../assets/img/logo/header__one.svg";
 
 function Header() {
   return (
@@ -13,7 +14,7 @@ function Header() {
               <div className="rts__logo">
                 <img
                   className="logo__image"
-                  src="src/assets/img/logo/header__one.svg"
+                  src={header}
                   width="160"
                   height="40"
                   alt="logo"

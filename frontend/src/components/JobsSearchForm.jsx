@@ -20,7 +20,7 @@ function JobSearchForm() {
 
               {/* Job Location */}
               <div className="search__item">
-                <div className="position-relative d-flex" tabindex="0">
+                <div className="position-relative d-flex">
                   <i className="fa-light fa-location-dot"></i>
                   <select className="nice-select" aria-label="Search Location">
                     <option selected>Search Location</option>

@@ -59,6 +59,7 @@
     <link rel="stylesheet" href="assets/css/plugins.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
+
   <body>
     <!-- header area -->
     <header class="rts__section rts__header absolute__header">
@@ -347,19 +348,49 @@
           <div
             class="col-lg-12 position-relative d-flex justify-content-between align-items-center"
           >
-            <div class="breadcrumb__area max-content breadcrumb__padding z-2">
-              <h1 class="breadcrumb-title h3 mb-3">Job List</h1>
-              <nav>
-                <ul class="breadcrumb m-0 lh-1">
-                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">
-                    Job List
-                  </li>
-                </ul>
-              </nav>
+            <div
+              class="breadcrumb__area max-content mx-auto breadcrumb__padding"
+            >
+              <div
+                class="rts__job__card__big bg-transparent p-0 position-relative z-1 flex-wrap justify-content-center d-flex gap-4 align-items-center"
+              >
+                <div class="">
+                  <div
+                    class="job__meta w-100 d-flex text-center text-md-start flex-column gap-2"
+                  >
+                    <h3 class="job__title text-center h3 mb-0">
+                      Senior UI Designer, Apple
+                    </h3>
+                    <div
+                      class="d-flex gap-4 justify-content-center justify-content-md-start flex-wrap mb-3 mt-2"
+                    >
+                      <div class="d-flex gap-2 align-items-center">
+                        <i class="fa-light fa-location-dot"></i> Newyork, USA
+                      </div>
+                      <div class="d-flex gap-2 align-items-center">
+                        <i class="fa-light rt-briefcase"></i> Full Time
+                      </div>
+                      <div class="d-flex gap-2 align-items-center">
+                        <i class="fa-light fa-clock"></i> 1 Years Ago
+                      </div>
+                      <div class="d-flex gap-2 fw-medium align-items-center">
+                        <i class="fa-light rt-price-tag"></i> $1000 - $2000
+                        Monthly
+                      </div>
+                    </div>
+                    <div
+                      class="job__tags d-flex justify-content-center flex-wrap gap-3"
+                    >
+                      <a href="#">Creative</a>
+                      <a href="#">user interface</a>
+                      <a href="#">web ui</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div
-              class="breadcrumb__area__shape d-flex gap-4 justify-content-end align-items-center"
+              class="breadcrumb__area__shape breadcrumb__style__four d-flex gap-4 justify-content-end align-items-center"
             >
               <div class="shape__one common">
                 <img src="assets/img/breadcrumb/shape-1.svg" alt="" />
@@ -377,589 +408,466 @@
     </div>
     <!-- breadcrumb area end -->
 
-    <!-- advance search -->
-    <div class="rts__section">
-      <div class="container">
-        <div class="row">
-          <div class="advance__search__bg">
-            <form action="#" class="advance__search__form">
-              <div class="search__item">
-                <div class="position-relative">
-                  <input
-                    type="text"
-                    id="search"
-                    placeholder="Enter Type Of job"
-                    required
-                  />
-                  <i class="fa-light fa-magnifying-glass"></i>
-                </div>
-              </div>
-              <!-- job location -->
-              <div class="search__item">
-                <div class="position-relative d-flex">
-                  <i class="fa-light fa-location-dot"></i>
-                  <div class="nice-select" tabindex="0">
-                    <span class="current">Search Location</span>
-                    <ul class="list">
-                      <li
-                        data-value="Nothing"
-                        data-display="Search Location"
-                        class="option selected focus"
-                      >
-                        Search Location
-                      </li>
-                      <li data-value="1" class="option">Dhaka</li>
-                      <li data-value="2" class="option">Barisal</li>
-                      <li data-value="3" class="option">Chittagong</li>
-                      <li data-value="4" class="option">Rajshahi</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <!-- job category -->
-              <div class="search__item">
-                <div class="position-relative d-flex">
-                  <i class="fa-light fa-briefcase"></i>
-                  <div class="nice-select" tabindex="0">
-                    <span class="current">Choose a Category</span>
-                    <ul class="list">
-                      <li
-                        data-value="Nothing"
-                        data-display="Choose a Category"
-                        class="option selected focus"
-                      >
-                        Choose a Category
-                      </li>
-                      <li data-value="1" class="option">Government</li>
-                      <li data-value="2" class="option">NGO</li>
-                      <li data-value="3" class="option">Private</li>
-                      <li data-value="4" class="option">Freelancing</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <!-- job post time -->
-              <div class="search__item">
-                <div class="position-relative d-flex">
-                  <i class="fa-light fa-clock"></i>
-                  <div class="nice-select" tabindex="0">
-                    <span class="current">Date Posted</span>
-                    <ul class="list">
-                      <li
-                        data-value="Nothing"
-                        data-display="Date Posted"
-                        class="option selected focus"
-                      >
-                        Date Posted
-                      </li>
-                      <li data-value="1" class="option">01 Jan 24</li>
-                      <li data-value="2" class="option">05 Feb 24</li>
-                      <li data-value="3" class="option">07 Mar 24</li>
-                      <li data-value="4" class="option">10 Mar 24</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <button type="submit" class="rts__btn fill__btn be-1 job__search">
-                Search Job
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- advance search end -->
-
     <!-- job list one -->
     <div class="rts__section section__padding">
       <div class="container">
-        <div class="row g-30">
-          <div class="col-12">
-            <div
-              class="top__query mb-40 d-flex flex-wrap gap-4 gap-xl-0 justify-content-between align-items-center"
-            >
-              <span class="text-dark font-20 fw-medium"
-                >Showing 1-9 of 19 results</span
-              >
-              <div class="d-flex flex-wrap align-items-center gap-4">
-                <form action="#" class="category-select d-flex gap-3">
-                  <div class="position-relative">
-                    <div class="nice-select" tabindex="0">
-                      <span class="current">Job Type</span>
-                      <ul class="list">
-                        <li
-                          data-value="Nothing"
-                          data-display="Job Type"
-                          class="option selected focus"
-                        >
-                          Job Type
-                        </li>
-                        <li data-value="1" class="option">Part Time</li>
-                        <li data-value="2" class="option">Full Time</li>
-                        <li data-value="3" class="option">Government</li>
-                        <li data-value="4" class="option">NGO</li>
-                        <li data-value="5" class="option">Private</li>
-                      </ul>
-                    </div>
+        <div class="row justify-content-center g-30">
+          <div class="col-lg-8">
+            <div class="rts__job__details">
+              <div class="mb-30">
+                <img
+                  class="rounded-3"
+                  src="assets/img/pages/job-details-4.webp"
+                  alt=""
+                />
+              </div>
+              <div class="job__overview style__four no-border-bottom mb-40">
+                <h6 class="fw-semibold mb-30">Job Overview</h6>
+                <div class="job__overview__content">
+                  <ul class="d-grid grid-style">
+                    <li
+                      class="d-flex flex-column gap-3 gap-sm-0 align-items-center justify-content-between"
+                    >
+                      <div class="d-flex gap-3">
+                        <span class="icon">
+                          <i class="rt-calender"></i>
+                        </span>
+                        <div>
+                          <span class="left-text"> Date Posted</span>
+                          <span class="text">10,July, 2023</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="d-flex flex-column gap-3 gap-sm-0 align-items-center justify-content-between"
+                    >
+                      <div class="d-flex gap-3">
+                        <span class="icon">
+                          <i class="fa-light fa-user"></i>
+                        </span>
+                        <div>
+                          <span class="left-text"> Vacancy</span>
+                          <span class="text">5</span>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li
+                      class="d-flex flex-column gap-3 gap-sm-0 align-items-center justify-content-between"
+                    >
+                      <div class="d-flex gap-3">
+                        <span class="icon">
+                          <i class="rt-experience"></i>
+                        </span>
+                        <div>
+                          <span class="left-text"> Experience</span>
+                          <span class="text">5 Years</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="d-flex flex-column gap-3 gap-sm-0 align-items-center justify-content-between"
+                    >
+                      <div class="d-flex gap-3">
+                        <span class="icon">
+                          <i class="rt-price-tag"></i>
+                        </span>
+                        <div>
+                          <span class="left-text"> Offered Salary</span>
+                          <span class="text">$2000-$3000</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="d-flex flex-column gap-3 gap-sm-0 align-items-center justify-content-between"
+                    >
+                      <div class="d-flex gap-3">
+                        <span class="icon">
+                          <i class="rt-loading"></i>
+                        </span>
+                        <div>
+                          <span class="left-text"> Job Deadline</span>
+                          <span class="text">01 August 2024</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="d-flex flex-column gap-3 gap-sm-0 align-items-center justify-content-between"
+                    >
+                      <div class="d-flex gap-3">
+                        <span class="icon">
+                          <i class="rt-qualification"></i>
+                        </span>
+                        <div>
+                          <span class="left-text"> Qualification</span>
+                          <span class="text">Bachelor Degree</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="d-flex flex-column gap-3 gap-sm-0 align-items-center justify-content-between"
+                    >
+                      <div class="d-flex gap-3">
+                        <span class="icon">
+                          <i class="fa-sharp fa-thin fa-location-dot"></i>
+                        </span>
+                        <div>
+                          <span class="left-text"> Location</span>
+                          <span class="text">New York, USA</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="d-flex flex-column gap-3 gap-sm-0 align-items-center justify-content-between"
+                    >
+                      <div class="d-flex gap-3">
+                        <span class="icon">
+                          <i class="fa-light fa-user"></i>
+                        </span>
+                        <div>
+                          <span class="left-text"> Gender</span>
+                          <span class="text">Both</span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div id="description" class="mb-30">
+                <h6 class="fw-semibold mb-20">Job Description</h6>
+                <p>
+                  We are seeking a skilled Part-Time Software Engineer to join
+                  our team, specializing in social media content creation for
+                  lead generation purposes. The ideal candidate will have a
+                  creative flair, technical proficiency, and a strong
+                  understanding of social media trends and algorithms. Must be
+                  able to work Monday-Friday during EST business hours. This
+                  role will be under the ScaledOn brand, but will be working
+                  directly with one of our partners as their dedicated Software
+                  Engineer.
+                </p>
+              </div>
+              <div id="responsibility" class="mb-30">
+                <h6 class="fw-semibold mb-20">Responsibility</h6>
+                <ul class="list-style-dot">
+                  <li>
+                    Design and build web and enterprise application using in
+                    ReactJS/Next JS/.Net Core
+                  </li>
+                  <li>
+                    Collaborate with cross-functional teams to analyze, design,
+                    and implement new features.
+                  </li>
+                  <li>
+                    Follow defined coding rules/conventions defined by the
+                    company.
+                  </li>
+                  <li>
+                    Perform Unit test and ensure proper test coverage as per
+                    organizational standard.
+                  </li>
+                  <li>
+                    Prepare basic design, detail design, execute basic
+                    acceptance testing.
+                  </li>
+                  <li>
+                    Follow review process for peer review to code delivery.
+                  </li>
+                  <li>Participate in defined meeting as per company policy.</li>
+                  <li>
+                    Senior Software Engineer should pose mindset and ability to
+                    lead small team.
+                  </li>
+                </ul>
+              </div>
+              <div id="requirements" class="mb-30">
+                <h6 class="fw-semibold mb-20">Requirements</h6>
+                <ul class="list-style-dot">
+                  <li>
+                    Excellent knowledge of Relational Databases MYSQL and ORM
+                    technologies (JPA, Hibernate).
+                  </li>
+                  <li>
+                    Strong understanding on Object-Oriented analysis and design
+                    using common design patterns.
+                  </li>
+                  <li>Need to know advanced in ReactJS/Next JS/.Net Core.</li>
+                  <li>Practical experience in REST & RESTful web services.</li>
+                  <li>Commanding knowledge on Maven, Gradle build tools.</li>
+                  <li>
+                    Follow review process for peer review to code delivery.
+                  </li>
+                  <li>Participate in defined meeting as per company policy.</li>
+                  <li>
+                    Senior Software Engineer should pose mindset and ability to
+                    lead small team.
+                  </li>
+                </ul>
+              </div>
+              <div id="skill" class="mb-30">
+                <h6 class="fw-semibold mb-20">Skills and Experience</h6>
+                <div class="job__tags job__details__tags">
+                  <a href="#" class="job__tag">Javascript</a>
+                  <a href="#" class="job__tag">user interface</a>
+                  <a href="#" class="job__tag">Problem Solving</a>
+                </div>
+              </div>
+              <div id="salary" class="mb-30">
+                <h6 class="fw-semibold mb-20">Salary and Benefits</h6>
+                <ul class="list-style-dot">
+                  <li>Lunch Facilities: Full Subsidize</li>
+                  <li>Salary Review: Yearly</li>
+                  <li>Festival Bonus: 2</li>
+                  <li>
+                    This will be a Night Shift work- Timing will be from 11.00
+                    PM to 07.00 AM.
+                  </li>
+                  <li>Weekend-Two Days</li>
+                  <li>Monthly on time guaranteed payment</li>
+                  <li>
+                    early Earned Leave, Sick Leave and Casual Leave facility and
+                    many more to come soon.
+                  </li>
+                  <li>Salery: $1000- $2000 Monthly</li>
+                </ul>
+              </div>
+              <div class="d-flex flex-wrap gap-4 mt-40 mb-60">
+                <a href="#" class="rts__btn apply__btn fill__btn be-1 fw-bold"
+                  >Apply This Possition</a
+                >
+                <div class="d-flex gap-3 align-items-center">
+                  <span class="h6 fw-semibold">Share</span>
+                  <div class="rts__social d-flex gap-3">
+                    <a href="https://facebook.com" aria-label="facebook">
+                      <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com" aria-label="instagram">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com" aria-label="linkedin">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://pinterest.com" aria-label="pinterest">
+                      <i class="fa-brands fa-pinterest"></i>
+                    </a>
+                    <a href="https://youtube.com" aria-label="youtube">
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
                   </div>
-                  <div class="position-relative min-200">
-                    <div class="nice-select" tabindex="0">
-                      <span class="current">Experience Level</span>
-                      <ul class="list">
-                        <li
-                          data-value="Nothing"
-                          data-display="Experience Level"
-                          class="option selected focus"
-                        >
-                          Experience Level
-                        </li>
-                        <li data-value="1" class="option">5+ Years</li>
-                        <li data-value="2" class="option">3-5 Years</li>
-                        <li data-value="3" class="option">2-3 Years</li>
-                        <li data-value="4" class="option">1-2 Years</li>
-                        <li data-value="5" class="option">Fresher</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="position-relative">
-                    <div class="nice-select" tabindex="0">
-                      <span class="current">Offerd Salery</span>
-                      <ul class="list">
-                        <li
-                          data-value="Nothing"
-                          data-display="Offerd Salery"
-                          class="option selected focus"
-                        >
-                          Offerd Salery
-                        </li>
-                        <li data-value="1" class="option">10000 - 20000</li>
-                        <li data-value="2" class="option">20000 - 30000</li>
-                        <li data-value="3" class="option">30000 - 40000</li>
-                        <li data-value="4" class="option">40000 - 50000</li>
-                        <li data-value="5" class="option">50000 - 60000</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="position-relative">
-                    <div class="nice-select" tabindex="0">
-                      <span class="current">All Category</span>
-                      <ul class="list">
-                        <li
-                          data-value="Nothing"
-                          data-display="All Category"
-                          class="option selected focus"
-                        >
-                          All Category
-                        </li>
-                        <li data-value="1" class="option">Part Time</li>
-                        <li data-value="2" class="option">Full Time</li>
-                        <li data-value="3" class="option">Government</li>
-                        <li data-value="4" class="option">NGO</li>
-                        <li data-value="5" class="option">Private</li>
-                      </ul>
-                    </div>
-                  </div>
-                </form>
+                </div>
               </div>
             </div>
-            <div class="row g-30">
-              <!-- single item -->
-              <div class="col-lg-12">
-                <div
-                  class="rts__job__card__big style__gradient__two flex-wrap d-flex justify-content-between align-items-center gap-3"
-                >
-                  <div
-                    class="d-flex gap-4 flex-column flex-md-row mb-3 mb-md-0 justify-content-start align-items-center"
-                  >
-                    <div class="company__icon">
-                      <img src="assets/img/home-1/company/apple.svg" alt="" />
-                    </div>
-                    <div class="job__meta">
-                      <div class="d-flex align-items-center gap-3">
-                        <a href="#" class="job__title h6"
-                          >Senior UI Designer, Apple</a
-                        >
-                      </div>
-                      <div class="d-flex gap-3 flex-wrap gap-lg-4 fw-medium">
-                        <div class="d-flex gap-2 align-items-center">
-                          <i class="fa-light fa-location-dot"></i> Newyork, USA
-                        </div>
-                        <div class="d-flex gap-2 align-items-center">
-                          <i class="fa-light rt-briefcase"></i> Full Time
-                        </div>
-                        <div class="d-flex gap-2 align-items-center">
-                          <i class="fa-light fa-clock"></i> 3 Days Ago
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="d-flex gap-4 flex-wrap align-items-center">
-                    <div class="job__tags d-flex flex-wrap gap-3">
-                      <a href="#">Creative</a>
-                      <a href="#">user interface</a>
-                      <a href="#">web ui</a>
-                    </div>
-                    <div class="d-flex gap-3 flex-wrap">
-                      <div class="job__sallery d-flex gap-2 align-items-center">
-                        <i class="fa-sharp rt-price-tag"></i> $500
-                        <span>Monthly</span>
-                      </div>
-                      <button class="apply__btn">Apply Now</button>
-                    </div>
-                  </div>
-                </div>
+            <div class="job__location__map">
+              <h5 class="fw-semibold mb-30">Location</h5>
+              <div class="gmap">
+                <iframe
+                  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Reacthemes+(ReacThemes)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                ></iframe>
               </div>
-              <!-- single item end -->
-              <!-- single item -->
-              <div class="col-lg-12">
-                <div
-                  class="rts__job__card__big style__gradient__two flex-wrap d-flex justify-content-between align-items-center gap-3"
-                >
-                  <div
-                    class="d-flex gap-3 flex-column flex-md-row mb-3 mb-md-0 justify-content-start align-items-center"
-                  >
-                    <div class="company__icon">
-                      <img src="assets/img/home-1/company/apple.svg" alt="" />
-                    </div>
-                    <div class="job__meta">
-                      <div class="d-flex align-items-center gap-3">
-                        <a href="#" class="job__title h6"
-                          >Senior UI Designer, Apple</a
-                        >
-                      </div>
-                      <div class="d-flex gap-3 flex-wrap gap-lg-4 fw-medium">
-                        <div class="d-flex gap-2 align-items-center">
-                          <i class="fa-light fa-location-dot"></i> Newyork, USA
-                        </div>
-                        <div class="d-flex gap-2 align-items-center">
-                          <i class="fa-light rt-briefcase"></i> Full Time
-                        </div>
-                        <div class="d-flex gap-2 align-items-center">
-                          <i class="fa-light fa-clock"></i> 3 Days Ago
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="d-flex gap-4 flex-wrap align-items-center">
-                    <div class="job__tags d-flex flex-wrap gap-3">
-                      <a href="#">Creative</a>
-                      <a href="#">user interface</a>
-                      <a href="#">web ui</a>
-                    </div>
-                    <div class="d-flex gap-3 flex-wrap">
-                      <div class="job__sallery d-flex gap-2 align-items-center">
-                        <i class="fa-sharp rt-price-tag"></i> $500
-                        <span>Monthly</span>
-                      </div>
-                      <button class="apply__btn">Apply Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- single item end -->
-              <!-- single item -->
-              <div class="col-lg-12">
-                <div
-                  class="rts__job__card__big style__gradient__two flex-wrap d-flex justify-content-between align-items-center gap-3"
-                >
-                  <div
-                    class="d-flex gap-3 flex-column flex-md-row mb-3 mb-md-0 justify-content-start align-items-center"
-                  >
-                    <div class="company__icon">
-                      <img src="assets/img/home-1/company/apple.svg" alt="" />
-                    </div>
-                    <div class="job__meta">
-                      <div class="d-flex align-items-center gap-3">
-                        <a href="#" class="job__title h6"
-                          >Senior UI Designer, Apple</a
-                        >
-                      </div>
-                      <div class="d-flex gap-3 flex-wrap gap-lg-4 fw-medium">
-                        <div class="d-flex gap-2 align-items-center">
-                          <i class="fa-light fa-location-dot"></i> Newyork, USA
-                        </div>
-                        <div class="d-flex gap-2 align-items-center">
-                          <i class="fa-light rt-briefcase"></i> Full Time
-                        </div>
-                        <div class="d-flex gap-2 align-items-center">
-                          <i class="fa-light fa-clock"></i> 3 Days Ago
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="d-flex gap-4 flex-wrap align-items-center">
-                    <div class="job__tags d-flex flex-wrap gap-3">
-                      <a href="#">Creative</a>
-                      <a href="#">user interface</a>
-                      <a href="#">web ui</a>
-                    </div>
-                    <div class="d-flex gap-3 flex-wrap">
-                      <div class="job__sallery d-flex gap-2 align-items-center">
-                        <i class="fa-sharp rt-price-tag"></i> $500
-                        <span>Monthly</span>
-                      </div>
-                      <button class="apply__btn">Apply Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- single item end -->
-              <!-- single item -->
-              <div class="col-lg-12">
-                <div
-                  class="rts__job__card__big style__gradient__two flex-wrap d-flex justify-content-between align-items-center gap-3"
-                >
-                  <div
-                    class="d-flex gap-3 flex-column flex-md-row mb-3 mb-md-0 justify-content-start align-items-center"
-                  >
-                    <div class="company__icon">
-                      <img src="assets/img/home-1/company/apple.svg" alt="" />
-                    </div>
-                    <div class="job__meta">
-                      <div class="d-flex align-items-center gap-3">
-                        <a href="#" class="job__title h6"
-                          >Senior UI Designer, Apple</a
-                        >
-                      </div>
-                      <div class="d-flex gap-3 flex-wrap gap-lg-4 fw-medium">
-                        <div class="d-flex gap-2 align-items-center">
-                          <i class="fa-light fa-location-dot"></i> Newyork, USA
-                        </div>
-                        <div class="d-flex gap-2 align-items-center">
-                          <i class="fa-light rt-briefcase"></i> Full Time
-                        </div>
-                        <div class="d-flex gap-2 align-items-center">
-                          <i class="fa-light fa-clock"></i> 3 Days Ago
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="d-flex gap-4 flex-wrap align-items-center">
-                    <div class="job__tags d-flex flex-wrap gap-3">
-                      <a href="#">Creative</a>
-                      <a href="#">user interface</a>
-                      <a href="#">web ui</a>
-                    </div>
-                    <div class="d-flex gap-3 flex-wrap">
-                      <div class="job__sallery d-flex gap-2 align-items-center">
-                        <i class="fa-sharp rt-price-tag"></i> $500
-                        <span>Monthly</span>
-                      </div>
-                      <button class="apply__btn">Apply Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- single item end -->
-              <!-- single item -->
-              <div class="col-lg-12">
-                <div
-                  class="rts__job__card__big style__gradient__two flex-wrap d-flex justify-content-between align-items-center gap-3"
-                >
-                  <div
-                    class="d-flex gap-3 flex-column flex-md-row mb-3 mb-md-0 justify-content-start align-items-center"
-                  >
-                    <div class="company__icon">
-                      <img src="assets/img/home-1/company/apple.svg" alt="" />
-                    </div>
-                    <div class="job__meta">
-                      <div class="d-flex align-items-center gap-3">
-                        <a href="#" class="job__title h6"
-                          >Senior UI Designer, Apple</a
-                        >
-                      </div>
-                      <div class="d-flex gap-3 flex-wrap gap-lg-4 fw-medium">
-                        <div class="d-flex gap-2 align-items-center">
-                          <i class="fa-light fa-location-dot"></i> Newyork, USA
-                        </div>
-                        <div class="d-flex gap-2 align-items-center">
-                          <i class="fa-light rt-briefcase"></i> Full Time
-                        </div>
-                        <div class="d-flex gap-2 align-items-center">
-                          <i class="fa-light fa-clock"></i> 3 Days Ago
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="d-flex gap-4 flex-wrap align-items-center">
-                    <div class="job__tags d-flex flex-wrap gap-3">
-                      <a href="#">Creative</a>
-                      <a href="#">user interface</a>
-                      <a href="#">web ui</a>
-                    </div>
-                    <div class="d-flex gap-3 flex-wrap">
-                      <div class="job__sallery d-flex gap-2 align-items-center">
-                        <i class="fa-sharp rt-price-tag"></i> $500
-                        <span>Monthly</span>
-                      </div>
-                      <button class="apply__btn">Apply Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- single item end -->
-              <!-- single item -->
-              <div class="col-lg-12">
-                <div
-                  class="rts__job__card__big style__gradient__two flex-wrap d-flex justify-content-between align-items-center gap-3"
-                >
-                  <div
-                    class="d-flex gap-3 flex-column flex-md-row mb-3 mb-md-0 justify-content-start align-items-center"
-                  >
-                    <div class="company__icon">
-                      <img src="assets/img/home-1/company/apple.svg" alt="" />
-                    </div>
-                    <div class="job__meta">
-                      <div class="d-flex align-items-center gap-3">
-                        <a href="#" class="job__title h6"
-                          >Senior UI Designer, Apple</a
-                        >
-                      </div>
-                      <div class="d-flex gap-3 flex-wrap gap-lg-4 fw-medium">
-                        <div class="d-flex gap-2 align-items-center">
-                          <i class="fa-light fa-location-dot"></i> Newyork, USA
-                        </div>
-                        <div class="d-flex gap-2 align-items-center">
-                          <i class="fa-light rt-briefcase"></i> Full Time
-                        </div>
-                        <div class="d-flex gap-2 align-items-center">
-                          <i class="fa-light fa-clock"></i> 3 Days Ago
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="d-flex gap-4 flex-wrap align-items-center">
-                    <div class="job__tags d-flex flex-wrap gap-3">
-                      <a href="#">Creative</a>
-                      <a href="#">user interface</a>
-                      <a href="#">web ui</a>
-                    </div>
-                    <div class="d-flex gap-3 flex-wrap">
-                      <div class="job__sallery d-flex gap-2 align-items-center">
-                        <i class="fa-sharp rt-price-tag"></i> $500
-                        <span>Monthly</span>
-                      </div>
-                      <button class="apply__btn">Apply Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- single item end -->
-              <!-- single item -->
-              <div class="col-lg-12">
-                <div
-                  class="rts__job__card__big style__gradient__two flex-wrap d-flex justify-content-between align-items-center gap-3"
-                >
-                  <div
-                    class="d-flex gap-3 flex-column flex-md-row mb-3 mb-md-0 justify-content-start align-items-center"
-                  >
-                    <div class="company__icon">
-                      <img src="assets/img/home-1/company/apple.svg" alt="" />
-                    </div>
-                    <div class="job__meta">
-                      <div class="d-flex align-items-center gap-3">
-                        <a href="#" class="job__title h6"
-                          >Senior UI Designer, Apple</a
-                        >
-                      </div>
-                      <div class="d-flex gap-3 flex-wrap gap-lg-4 fw-medium">
-                        <div class="d-flex gap-2 align-items-center">
-                          <i class="fa-light fa-location-dot"></i> Newyork, USA
-                        </div>
-                        <div class="d-flex gap-2 align-items-center">
-                          <i class="fa-light rt-briefcase"></i> Full Time
-                        </div>
-                        <div class="d-flex gap-2 align-items-center">
-                          <i class="fa-light fa-clock"></i> 3 Days Ago
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="d-flex gap-4 flex-wrap align-items-center">
-                    <div class="job__tags d-flex flex-wrap gap-3">
-                      <a href="#">Creative</a>
-                      <a href="#">user interface</a>
-                      <a href="#">web ui</a>
-                    </div>
-                    <div class="d-flex gap-3 flex-wrap">
-                      <div class="job__sallery d-flex gap-2 align-items-center">
-                        <i class="fa-sharp rt-price-tag"></i> $500
-                        <span>Monthly</span>
-                      </div>
-                      <button class="apply__btn">Apply Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- single item end -->
-              <!-- single item -->
-              <div class="col-lg-12">
-                <div
-                  class="rts__job__card__big style__gradient__two flex-wrap d-flex justify-content-between align-items-center gap-3"
-                >
-                  <div
-                    class="d-flex gap-3 flex-column flex-md-row mb-3 mb-md-0 justify-content-start align-items-center"
-                  >
-                    <div class="company__icon">
-                      <img src="assets/img/home-1/company/apple.svg" alt="" />
-                    </div>
-                    <div class="job__meta">
-                      <div class="d-flex align-items-center gap-3">
-                        <a href="#" class="job__title h6"
-                          >Senior UI Designer, Apple</a
-                        >
-                      </div>
-                      <div class="d-flex gap-3 flex-wrap gap-lg-4 fw-medium">
-                        <div class="d-flex gap-2 align-items-center">
-                          <i class="fa-light fa-location-dot"></i> Newyork, USA
-                        </div>
-                        <div class="d-flex gap-2 align-items-center">
-                          <i class="fa-light rt-briefcase"></i> Full Time
-                        </div>
-                        <div class="d-flex gap-2 align-items-center">
-                          <i class="fa-light fa-clock"></i> 3 Days Ago
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="d-flex gap-4 flex-wrap align-items-center">
-                    <div class="job__tags d-flex flex-wrap gap-3">
-                      <a href="#">Creative</a>
-                      <a href="#">user interface</a>
-                      <a href="#">web ui</a>
-                    </div>
-                    <div class="d-flex gap-3 flex-wrap">
-                      <div class="job__sallery d-flex gap-2 align-items-center">
-                        <i class="fa-sharp rt-price-tag"></i> $500
-                        <span>Monthly</span>
-                      </div>
-                      <button class="apply__btn">Apply Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- single item end -->
-            </div>
-            <div class="rts__pagination d-block mx-auto pt-60 max-content">
-              <ul class="d-flex gap-2">
-                <li>
-                  <a href="#" class="inactive"
-                    ><i class="rt-chevron-left"></i
-                  ></a>
-                </li>
-                <li><a class="active" href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li>
-                  <a href="#"><i class="rt-chevron-right"></i></a>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- job list one end -->
+
+    <!-- Related Job -->
+    <div class="rts__section pb-120 overflow-hidden">
+      <div class="container">
+        <div class="row justify-content-center position-relative">
+          <div class="col-xl-6 col-lg-10">
+            <div class="rts__section__content text-center mb-60">
+              <h3 class="rts__section__title section__mb">Related Jobs</h3>
+              <p class="rts__section__desc">
+                Looking for your next career opportunity. Look no further.
+              </p>
+            </div>
+          </div>
+          <div
+            class="rts__slider__control d-none d-md-flex style-gray z-3 w-100 justify-content-between g-0 position-absolute top-50 translate-middle-y"
+          >
+            <div class="rts__slide__next slider__btn">
+              <i class="fa-sharp fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="rts__slide__prev slider__btn">
+              <i class="fa-sharp fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row swiper-data overflow-hidden"
+          data-swiper='{
+                "slidesPerView": 4.1,
+                    "autoplay": true,
+                    "loop": true,
+                    "navigation": {
+                        "nextEl": ".rts__slide__next",
+                        "prevEl": ".rts__slide__prev"
+                    },
+                    "breakpoints": {
+                        "0": {
+                            "slidesPerView": 1.05
+                        },
+                        "576": {
+                            "slidesPerView": 1.05
+                        },
+                        "768": {
+                            "slidesPerView": 2.05
+                        },
+                        "992": {
+                            "slidesPerView": 3.05
+                        },
+                        "1200": {
+                            "slidesPerView": 3.02
+                        },
+                        "1366":{
+                            "slidesPerView": 3.05
+                        },
+                        "1600":{
+                            "slidesPerView": 4.05
+                        }
+
+
+                    }
+
+                }'
+        >
+          <div class="swiper-wrapper">
+            <!-- single slide -->
+            <div class="swiper-slide">
+              <div class="rts__job__card style__five">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="company__icon">
+                    <img src="assets/img/home-1/company/microsoft.svg" alt="" />
+                  </div>
+                  <div class="featured__option">
+                    <span>Featured</span>
+                  </div>
+                </div>
+                <div class="d-flex gap-3 mt-4 flex-wrap">
+                  <div class="d-flex gap-2 align-items-center font-sm">
+                    <i class="fa-light fa-location-dot"></i> Newyork, USA
+                  </div>
+                  <div class="d-flex gap-2 align-items-center font-sm">
+                    <i class="fa-light fa-briefcase"></i> Full Time
+                  </div>
+                </div>
+                <div class="font-20 fw-medium job__title mt-3 mb-2">
+                  <a href="#" aria-label="job" class="job__title">
+                    Software Engineer, Apple
+                  </a>
+                </div>
+                <div class="job__tags d-flex flex-wrap gap-2 mt-4">
+                  <a href="#">Creative</a>
+                  <a href="#">user interface</a>
+                  <a href="#">web ui</a>
+                </div>
+              </div>
+            </div>
+            <!-- single slide end -->
+            <!-- single slide -->
+            <div class="swiper-slide">
+              <div class="rts__job__card style__five">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="company__icon">
+                    <img src="assets/img/home-1/company/apple.svg" alt="" />
+                  </div>
+                  <div class="featured__option">
+                    <span>Featured</span>
+                  </div>
+                </div>
+                <div class="d-flex gap-3 mt-4 flex-wrap">
+                  <div class="d-flex gap-2 align-items-center font-sm">
+                    <i class="fa-light fa-location-dot"></i> Newyork, USA
+                  </div>
+                  <div class="d-flex gap-2 align-items-center font-sm">
+                    <i class="fa-light fa-briefcase"></i> Full Time
+                  </div>
+                </div>
+                <div class="font-20 fw-medium job__title mt-3 mb-2">
+                  <a href="#" aria-label="job" class="job__title">
+                    Software Engineer, Apple
+                  </a>
+                </div>
+                <div class="job__tags d-flex flex-wrap gap-2 mt-4">
+                  <a href="#">Creative</a>
+                  <a href="#">user interface</a>
+                  <a href="#">web ui</a>
+                </div>
+              </div>
+            </div>
+            <!-- single slide end -->
+            <!-- single slide -->
+            <div class="swiper-slide">
+              <div class="rts__job__card style__five">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="company__icon">
+                    <img src="assets/img/home-1/company/google.svg" alt="" />
+                  </div>
+                  <div class="featured__option">
+                    <span>Featured</span>
+                  </div>
+                </div>
+                <div class="d-flex gap-3 mt-4 flex-wrap">
+                  <div class="d-flex gap-2 align-items-center font-sm">
+                    <i class="fa-light fa-location-dot"></i> Newyork, USA
+                  </div>
+                  <div class="d-flex gap-2 align-items-center font-sm">
+                    <i class="fa-light fa-briefcase"></i> Full Time
+                  </div>
+                </div>
+                <div class="font-20 fw-medium job__title mt-3 mb-2">
+                  <a href="#" aria-label="job" class="job__title">
+                    Software Engineer, bing
+                  </a>
+                </div>
+                <div class="job__tags d-flex flex-wrap gap-2 mt-4">
+                  <a href="#">Creative</a>
+                  <a href="#">htmx </a>
+                  <a href="#">Php</a>
+                  <a href="#">css</a>
+                </div>
+              </div>
+            </div>
+            <!-- single slide end -->
+
+            <!-- single slide -->
+            <div class="swiper-slide">
+              <div class="rts__job__card style__five">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="company__icon">
+                    <img src="assets/img/home-1/company/in.svg" alt="" />
+                  </div>
+                  <div class="featured__option">
+                    <span>Urgent</span>
+                  </div>
+                </div>
+                <div class="d-flex gap-3 mt-4 flex-wrap">
+                  <div class="d-flex gap-2 align-items-center font-sm">
+                    <i class="fa-light fa-location-dot"></i> Newyork, USA
+                  </div>
+                  <div class="d-flex gap-2 align-items-center font-sm">
+                    <i class="fa-light fa-briefcase"></i> Full Time
+                  </div>
+                </div>
+                <div class="font-20 fw-medium job__title mt-3 mb-2">
+                  <a href="#" aria-label="job" class="job__title">
+                    Software Engineer, In
+                  </a>
+                </div>
+                <div class="job__tags d-flex flex-wrap gap-2 mt-4">
+                  <a href="#">Creative</a>
+                  <a href="#">user interface</a>
+                  <a href="#">Python</a>
+                </div>
+              </div>
+            </div>
+            <!-- single slide end -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Related Job end -->
 
     <!-- app center -->
 
