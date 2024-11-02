@@ -6,6 +6,9 @@ import {
   MyJobSvg,
 } from "../components/Svgs";
 import EmployerMyJobs from "../components/EmployerMyJobs";
+import EmployerDashJobPost from "../components/EmployerDashJobPost";
+import EmployerDashList from "../components/EmployerDashList";
+import EmployerDashDeleteProfile from "../components/EmployerDashDeleteProfile";
 
 function Dashboard() {
   return (
@@ -26,12 +29,15 @@ function Dashboard() {
           </ul>
         </div>
         <div className="dash__logout">
-          <a className="logout__btn" href="#">
+          <a className="logout__btn">
             <i className="rt-login" /> Logout
           </a>
         </div>
       </div>
       {/* <EmployerMyJobs /> */}
+      {/* <EmployerDashJobPost /> */}
+      {/* <EmployerDashList /> */}
+      <EmployerDashDeleteProfile />
     </div>
   );
 }
