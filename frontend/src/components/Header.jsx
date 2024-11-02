@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -24,13 +24,19 @@ function Header() {
                   <nav className="navigation__menu" id="offcanvas__menu">
                     <ul className="list-unstyled">
                       <li className="navigation__menu--item ">
-                        <button to="#">Home</button>
-                      </li>
-                      <li className="navigation__menu--item">
-                        <button to="#">Jobs</button>
+                        <Link to="/">
+                          <button>Home</button>
+                        </Link>
                       </li>
                       <li className="navigation__menu--item ">
-                        <button to="#">Contact</button>
+                        <Link to="/jobs">
+                          <button>Jobs</button>
+                        </Link>
+                      </li>
+                      <li className="navigation__menu--item ">
+                        <Link to="/contact">
+                          <button>Contact</button>
+                        </Link>
                       </li>
                     </ul>
                   </nav>

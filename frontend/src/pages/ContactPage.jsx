@@ -70,13 +70,10 @@ const Contact = () => {
             <div className="col-lg-4 col-md-6">
               <div className="rts__workprocess__box is__contact rounded-3">
                 <div className="rts__icon">
-                  <img src="src//assets/img/icon/mail.svg" alt="Mail Icon" />
+                  <img src="src/assets/img/icon/mail.svg" alt="Mail Icon" />
                 </div>
                 <span className="process__title h6 d-block">Email Here</span>
-                <a
-                  className="text-para fw-medium"
-                  href="mailto:2R0Z9@example.com"
-                >
+                <a className="text-para fw-medium">
                   b01648521@studentmail.uws.ac.uk
                   b01648519@studentmail.uws.ac.uk
                 </a>
@@ -87,12 +84,10 @@ const Contact = () => {
             <div className="col-lg-4 col-md-6">
               <div className="rts__workprocess__box is__contact rounded-3">
                 <div className="rts__icon">
-                  <img src="src//assets/img/icon/phone.svg" alt="Phone Icon" />
+                  <img src="src/assets/img/icon/phone.svg" alt="Phone Icon" />
                 </div>
                 <span className="process__title h6 d-block">Call Here</span>
-                <a className="fw-medium text-para" href="tel:+44-20-7328-4499">
-                  0141 848 3000
-                </a>
+                <a className="fw-medium text-para">0141 848 3000</a>
               </div>
             </div>
           </div>
